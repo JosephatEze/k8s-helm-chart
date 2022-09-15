@@ -54,7 +54,7 @@ ingress:
           pathType: ImplementationSpecific
           backend:
             service:
-              name: {{ include "front-end.fullname" . }}
+              name: front-end-svc
               port:
                 number: 80
   tls: []
